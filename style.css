@@ -4,7 +4,7 @@ html, body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   height: 100%;
-  background: #fdfaff;
+ background: linear-gradient(to bottom, #fdfaff, #eae2f8);
   color: #333;
 }
 
