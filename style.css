@@ -89,6 +89,40 @@ header {
 .socials a:hover img {
   transform: scale(1.1);
 }
+#events {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  max-width: 350px;
+  text-align: left;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.event-card h3 {
+  margin-top: 0.5rem;
+  color: #440e62;
+}
 
 footer {
   background: #440e62;
@@ -96,3 +130,4 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
