@@ -72,23 +72,6 @@ header {
   background: #e63946;
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.socials img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s;
-}
-
-.socials a:hover img {
-  transform: scale(1.1);
-}
 #events {
   padding: 3rem 1rem;
   text-align: center;
@@ -122,6 +105,25 @@ header {
 .event-card h3 {
   margin-top: 0.5rem;
   color: #440e62;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.socials a:hover img {
+  transform: scale(1.1);
+}
+
 }
 
 footer {
