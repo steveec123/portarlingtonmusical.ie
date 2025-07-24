@@ -161,4 +161,45 @@ main::before {
     padding: 0.25rem 0.5rem;/* more touch‑friendly spacing */
   }
 }
+/* Hamburger button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  /* Hide nav by default */
+  .sticky-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    flex-direction: column;
+    padding-top: 4rem; /* push below header */
+  }
+  /* When nav-open on body, show nav */
+  body.nav-open .sticky-nav {
+    display: flex;
+  }
+  .sticky-nav a {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+  }
+}
 
