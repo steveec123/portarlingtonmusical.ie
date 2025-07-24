@@ -149,4 +149,16 @@ main::before {
   z-index: -1;
 }
 /* ====================================== */
+/* Mobile‑friendly nav */
+@media (max-width: 600px) {
+  .sticky-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .sticky-nav a {
+    font-size: 0.9rem;      /* slightly smaller text */
+    padding: 0.25rem 0.5rem;/* more touch‑friendly spacing */
+  }
+}
 
