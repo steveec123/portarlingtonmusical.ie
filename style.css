@@ -54,6 +54,16 @@ header {
   text-align: center;
 }
 
+/* ---- OVERRIDE FOR EVENTS SECTION ---- */
+.snap-section#events {
+  /* Allow Events to expand past one viewport */
+  height: auto;
+  min-height: 100vh;
+  /* Keep snap alignment at top */
+  scroll-snap-align: start;
+}
+/* -------------------------------------- */
+
 .alt-bg {
   background: #f3eef9;
 }
@@ -68,6 +78,7 @@ header {
   text-decoration: none;
 }
 
+/* Facebook Events iframe styling */
 .fb-events-iframe {
   max-width: 600px;
   margin: 2rem auto;
@@ -75,10 +86,8 @@ header {
 .fb-events-iframe iframe {
   width: 100% !important;
   height: 800px !important;
+  border: none;
 }
-
-
-
 
 .socials {
   display: flex;
@@ -104,4 +113,3 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
