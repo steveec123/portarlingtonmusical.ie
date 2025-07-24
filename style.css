@@ -68,16 +68,15 @@ header {
   text-decoration: none;
 }
 
-#events .fb-page {
-  margin: 2rem auto;
+.fb-events-iframe {
   max-width: 600px;
+  margin: 2rem auto;
 }
-
-#events .fb-page,
-#events .fb-page > span {
+.fb-events-iframe iframe {
   width: 100% !important;
   height: 800px !important;
 }
+
 
 
 
