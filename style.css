@@ -1,4 +1,21 @@
 html, body {
+   position: relative;
+  z-index: 0; /* create a stacking context */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/logo.png') center center no-repeat;
+  background-size: contain;  /* or `cover` if you want it larger */
+  opacity: 0.05;              /* tweak 0.00–1.00 to taste */
+  z-index: -1;                /* sit behind all content */
+  pointer-events: none;       /* allow clicks through it */
+}
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
