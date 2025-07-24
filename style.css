@@ -70,17 +70,13 @@ header {
 
 #events .fb-page {
   margin: 2rem auto;
+  max-width: 600px;
 }
 
 #events .fb-page,
 #events .fb-page > span {
   width: 100% !important;
-  max-width: 600px;
-}
-
-#events .fb-page iframe {
-  width: 100% !important;
-  height: 600px !important;
+  height: 800px !important;
 }
 
 
