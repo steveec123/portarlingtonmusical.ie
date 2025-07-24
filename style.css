@@ -68,11 +68,21 @@ header {
   text-decoration: none;
 }
 
-.instagram-embed {
-  width: 100%;
-  max-width: 600px;
+#events .fb-page {
   margin: 2rem auto;
 }
+
+#events .fb-page,
+#events .fb-page > span {
+  width: 100% !important;
+  max-width: 600px;
+}
+
+#events .fb-page iframe {
+  width: 100% !important;
+  height: 600px !important;
+}
+
 
 
 .socials {
