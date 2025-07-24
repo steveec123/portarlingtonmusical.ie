@@ -77,6 +77,14 @@ header {
   width: 100% !important;
   border: none;
 }
+.gallery-embed {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.gallery-embed iframe {
+  width: 100% !important;
+  border: none;
+}
 
 .socials {
   display: flex;
