@@ -19,12 +19,15 @@ header {
   width: 120px;
   max-width: 120px;
   margin-bottom: 1rem;
-@media (max-width: 600px) {
-  .logo {
-    width: 80px;
-    max-width: 80px;
-  }
 }
+
+ @media (max-width: 600px) {
+   .logo {
+     width: 80px;
+     max-width: 80px;
+   }
+ }
+
 
 .sticky-nav {
   position: sticky;
