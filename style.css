@@ -77,20 +77,34 @@ header {
   width: 100% !important;
   border: none;
 }
-.gallery-embed {
-  max-width: 900px;
-  height: 600px;          /* visible “window” height */
-  margin: 2rem auto;
-  overflow-y: auto;       /* vertical scrolling only */
-  overflow-x: hidden;     /* hide any horizontal overflow */
+/* 1. Override the Gallery snap‑section to auto‑height */
+.snap-section#gallery {
+  height: auto;         /* let it expand for all images */
+  min-height: 100vh;    /* still snap to at least one viewport */
+  scroll-snap-align: start;
 }
 
+/* 2. Make just the gallery embed scroll vertically */
+.gallery-embed {
+  max-width: 900px;
+  height: 600px;        /* visible “window” height */
+  margin: 2rem auto;
+  overflow-y: auto;     /* vertical scroll inside only this box */
+  overflow-x: hidden;   /* no horizontal scroll */
+  background: white;    /* optional: contrast or frame */
+  border-radius: 8px;   /* optional: rounding */
+}
+
+/* 3. Ensure the iframe fills the embed box */
 .gallery-embed iframe {
   width: 100% !important;
-  height: 2000px;         /* must match the iframe height above */
+  height: 2000px;       /* whatever total height you need */
   border: none;
   display: block;
+  position: relative;
+  z-index: 0;           /* sit below next section */
 }
+
 
 
 .socials {
