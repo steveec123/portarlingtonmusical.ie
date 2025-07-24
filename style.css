@@ -79,12 +79,19 @@ header {
 }
 .gallery-embed {
   max-width: 900px;
+  height: 600px;          /* visible “window” height */
   margin: 2rem auto;
+  overflow-y: auto;       /* vertical scrolling only */
+  overflow-x: hidden;     /* hide any horizontal overflow */
 }
+
 .gallery-embed iframe {
   width: 100% !important;
+  height: 2000px;         /* must match the iframe height above */
   border: none;
+  display: block;
 }
+
 
 .socials {
   display: flex;
