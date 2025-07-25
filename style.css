@@ -220,4 +220,19 @@ footer {
   scroll-snap-align: start;
   padding-bottom: 2rem;/* extra breathing room */
 }
+/* ================ About Section Override ================ */
+.snap-section#about {
+  /* kill the full‑height flex centering */
+  display: block !important;
+  height: auto !important;
+  min-height: auto !important;
+  scroll-snap-align: start;
+  padding: 4rem 2rem;       /* preserve your existing padding */
+  text-align: left;         /* align text normally */
+}
+
+/* optional: give the <h2> a bottom margin for breathing room */
+#about h2 {
+  margin-bottom: 1rem;
+}
 
