@@ -1,4 +1,4 @@
-/* ================= Global Styles ================= */
+/* ================ Global Styles ================ */
 html, body {
   margin: 0;
   padding: 0;
@@ -21,9 +21,16 @@ header {
   width: 120px;
   max-width: 120px;
   margin-bottom: 1rem;
-}  /* ← fixed: closing brace was missing */
+} /* ← Closing brace added here */
 
-/* ================ Navigation (desktop) ================ */
+@media (max-width: 600px) {
+  .logo {
+    width: 80px;
+    max-width: 80px;
+  }
+}
+
+/* =============== Navigation (Desktop) ============== */
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -41,7 +48,7 @@ header {
   font-weight: bold;
 }
 
-/* ================= Scroll‑Snap Sections ================= */
+/* ============== Scroll‑Snap Sections =============== */
 .snap-container {
   height: 100vh;
   overflow-y: scroll;
@@ -63,7 +70,7 @@ header {
   background: #f3eef9;
 }
 
-/* ================= Buttons ================= */
+/* ==================== Buttons ===================== */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -74,7 +81,7 @@ header {
   text-decoration: none;
 }
 
-/* =============== Google Calendar Embed =============== */
+/* ============= Google Calendar Embed ============= */
 .calendar-embed {
   max-width: 800px;
   margin: 2rem auto;
@@ -85,15 +92,15 @@ header {
   border: none;
 }
 
-/* =============== Gallery Overrides =============== */
-/* Let gallery section expand past one screen */
+/* ================= Gallery Overrides ============== */
+/* Let gallery expand beyond one viewport */
 .snap-section#gallery {
   height: auto;
   min-height: 100vh;
   scroll-snap-align: start;
 }
 
-/* Make only the gallery iframe scrollable vertically */
+/* Make only the gallery box scrollable vertically */
 .gallery-embed {
   max-width: 900px;
   height: 600px;
@@ -113,7 +120,7 @@ header {
   z-index: 0;
 }
 
-/* ================= Social Icons ================= */
+/* ================= Social Icons =================== */
 .socials {
   display: flex;
   justify-content: center;
@@ -132,7 +139,7 @@ header {
   transform: scale(1.1);
 }
 
-/* ================= Footer ================= */
+/* ==================== Footer ===================== */
 footer {
   background: #440e62;
   color: white;
@@ -140,13 +147,13 @@ footer {
   padding: 1rem;
 }
 
-/* =============== Mobile & Hamburger Menu =============== */
-/* Hide the hamburger on desktop */
+/* ============= Hamburger & Mobile Nav ============= */
+/* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
 }
 
-/* Desktop (keeps nav always visible) */
+/* Desktop: keep nav visible */
 @media (min-width: 601px) {
   .sticky-nav {
     display: flex !important;
@@ -155,13 +162,8 @@ footer {
   }
 }
 
-/* Mobile: show hamburger, hide nav until toggled */
+/* Mobile: show hamburger & hide nav by default */
 @media (max-width: 600px) {
-  .logo {
-    width: 80px;
-    max-width: 80px;
-  }
-
   .menu-toggle {
     display: block;
     position: absolute;
@@ -183,7 +185,7 @@ footer {
     right: 0;
     background: #eee;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 4rem; /* push below header */
     z-index: 1000;
   }
 
@@ -197,3 +199,4 @@ footer {
     font-size: 1rem;
   }
 }
+
