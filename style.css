@@ -222,17 +222,19 @@ footer {
 }
 /* ================ About Section Override ================ */
 .snap-section#about {
-  /* kill the full‑height flex centering */
   display: block !important;
   height: auto !important;
-  min-height: auto !important;
+  min-height: 100vh !important;
   scroll-snap-align: start;
-  padding: 4rem 2rem;       /* preserve your existing padding */
-  text-align: left;         /* align text normally */
+  padding: 4rem 2rem;
+  text-align: center;     /* center all text inside */
 }
 
-/* optional: give the <h2> a bottom margin for breathing room */
-#about h2 {
-  margin-bottom: 1rem;
+/* Center the image container and give top margin */
+.about-photo {
+  margin: 1.5rem auto 0;   /* top auto, auto left/right */
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
