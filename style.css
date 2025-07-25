@@ -213,4 +213,11 @@ footer {
   width: 100%;
   height: auto;
 }
+/* Allow About section to expand past one viewport */
+.snap-section#about {
+  height: auto;        /* let it grow for text + image */
+  min-height: 100vh;   /* still snap-to-start */
+  scroll-snap-align: start;
+  padding-bottom: 2rem;/* extra breathing room */
+}
 
