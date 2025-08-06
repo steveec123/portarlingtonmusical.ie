@@ -238,3 +238,17 @@ footer {
   border-radius: 8px;
   overflow: hidden;
 }
+/* About section external link styling */
+.about-link {
+  margin-top: 1rem;
+}
+
+.about-link a {
+  color: #440e62;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-link a:hover {
+  text-decoration: underline;
+}
